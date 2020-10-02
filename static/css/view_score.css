@@ -1,0 +1,9 @@
+.score_form_container{
+    background-image: url('img/nature.jpg');
+    border-radius: 10px;
+    padding-top: 20px;
+    width: 400px;
+    color: white;
+    height: auto;
+    padding-bottom: 5px;
+}

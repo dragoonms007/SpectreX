@@ -1,0 +1,27 @@
+body{
+    background-image: url('img/bg_nav.jpg');
+}
+.container{
+    background-image: url('img/nature.jpg');
+    border-radius: 10px;
+    padding-top: 20px;
+    width: 350px;
+    color: white;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+.container h1{
+    text-align: center;
+}
+
+.navbar-brand{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.navbar{
+    padding-left: 590px;
+    border: solid 2px white;
+    
+}

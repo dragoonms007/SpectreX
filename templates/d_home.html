@@ -1,0 +1,10 @@
+{% extends 'd_base.html' %}
+{% block title %}Home{% endblock %}
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static', filename='css/d_board.css')}}">
+{% endblock %}
+
+{% block content %}
+    <h1 class="header">Spectre X</h1>
+{% endblock %}

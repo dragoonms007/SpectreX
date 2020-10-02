@@ -1,0 +1,32 @@
+.container{
+    padding-top: 20px;
+}
+.jumbotron{
+    background-image: url('img/nature.jpg');
+    color: white;
+}
+.jumbotron .btn{
+    background-color: teal;
+}
+.jumbotron .btn:hover{
+    border: white solid 2px;
+    background-color: green;
+}
+
+.jumbotron .table th{
+    background-color : ('img/bg_nav.jpg');
+    background-size: cover;
+}
+.modal-content{
+    background-image: url('img/nature.jpg');
+}
+
+.form-group label{
+    color: white;
+}
+.modal-header{
+    background-image: url('img/bg_nav.jpg');
+}
+.modal-title{
+    color: white;
+}

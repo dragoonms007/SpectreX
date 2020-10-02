@@ -1,0 +1,98 @@
+{% extends 'd_base.html' %}
+
+{% block head %}
+<title>Manage</title>
+{{ super() }}
+
+<link rel="stylesheet" href="{{url_for('static',filename='css/create_test.css')}}">
+
+{% endblock %}
+
+{% block content %}
+<br>
+{% with messages = get_flashed_messages() %}
+ 
+{% if messages %}
+
+{% for message in messages %}
+
+<div class="alert alert-success alert-dismissable" role="alert">
+
+    <button type="button" class="close" data-dismiss="alert" aria-label="close">
+
+        <span aria-hidden="true">x</span>
+
+    </button>
+
+
+{{message}}
+
+
+</div>
+
+
+{% endfor %}
+
+{% endif %}
+{% endwith %}
+<br>
+<div class="container">
+    <h1>Upload Score</h1>
+    <form id="upload-form"  action="{{url_for('createUser')}}" method="POST">
+        <div class="form-group">
+            <label>Username</label>
+            <input class="form-control" type="text" name="uname" placeholder="Enter Username" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Password</label>
+            <input class="form-control" type="password" name="pass" placeholder="Enter Password" required>
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Privillege</label>
+            <select name="privs" class="form-control">
+                <option selected>Choose...</option>
+                <option value="Administrator">Administrator</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Student">Student</option>
+            </select>
+        </div>
+        <br>
+        <button class="btn btn-primary" type="submit">CREATE</button>
+        <br>
+        
+    </form>
+</div>
+<br>
+
+
+
+
+<div class="row">
+    <div class="col md-12">
+       
+        <div class="jumbotron p-3">
+
+             <table class="table table-hover table-dark">
+
+                 <tr>
+
+                    <th>User</th>
+                    <th>Password</th>
+                    <th>privillege</th>
+
+ 
+                 </tr>
+                {% for row in users %}
+                <tr>
+                    <td>{{row.username}}</td>
+                    <td>{{row.password}}</td>
+                    <td>{{row.priv}}</td>
+                </tr>
+                {% endfor %}
+                </table>
+                </div>
+                </div>
+                </div>
+{% endblock %}

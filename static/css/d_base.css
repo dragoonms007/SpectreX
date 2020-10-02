@@ -1,0 +1,44 @@
+body{
+    background-image: url('img/bg_nav.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar{
+    
+    background-color: transparent !important;
+    border: white solid 1px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00ccff, 0 0 40px #00ccff, 0 0 50px #00ccff, 0 0 60px#00ccff, 0 0 70px #00ccff;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff, 0 0 60px #00ffff, 0 0 70px #00ffff, 0 0 80px #00ffff;
+    }
+  }
+
+.navbar .navbar-brand{
+    color: #FFF;
+    font-weight: bolder;
+    font-size: 2.0em;
+}
+
+.navbar .navbar-nav{
+    align-items: center;
+}
+
+.navbar .collapse .nav-link{
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+.navbar .collapse .form-inline .btn{
+    color: white;
+}
+
+.navbar .collapse .navbar-nav .nav-item .nav-link:hover{
+    border: white solid 2px;
+}
